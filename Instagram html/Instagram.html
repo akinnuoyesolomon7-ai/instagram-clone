@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=op, initial-scale=1.0">
+   
+    <title>Instagram Clone</title>
+
+    <!-- Link our CSS file -->
+    <link rel="stylesheet" href="../Instagram css/Instagram.css">
+
+    <!-- Font Awesome for icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- LEFT SIDEBAR -->
+    <section class="sidebar">
+        <div class="logos">
+           <i class="fa-brands fa-square-instagram"></i>
+        <h1 class="logo">Instagram</h1>
+        </div>
+       
+    
+        <nav>
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-house"></i>
+                <span>Home</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span>Search</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-regular fa-compass"></i>
+                <span>Explore</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-clapperboard"></i>
+                <span>Reels</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-brands fa-facebook-messenger"></i>
+                <span>Messages</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-regular fa-heart"></i>
+                <span>Notifications</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <i class="fa-solid fa-plus"></i>
+                <span>Create</span>
+            </a>
+
+            <a href="#" class="nav-link">
+                <img
+                    src="../Images/mypro.jpg" alt="My profile" class="nav-avatar">
+                <span>Profile</span>
+            </a>
+        </nav>
+
+        <a href="#" class="nav-link more">
+            <i class="fa-solid fa-bars"></i>
+            <span>More</span>
+        </a>
+
+    </section>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+
+        <!-- STORIES SECTION -->
+        <section class="stories">
+        
+            
+            <div class="story" onclick="viewStory(this)">
+                <img src="../images/hea1.jpg" alt="Alex">
+                <p>alex</p>
+            </div>
+
+            <div class="story" onclick="viewStory(this)">
+                <img src="../images/hea2.jpg" alt="Sarah">
+                <p>sarah</p>
+            </div>
+
+            <div class="story" onclick="viewStory(this)">
+                <img src="../images/hea3.jpg" alt="David">
+                <p>david</p>
+            </div>
+
+            <div class="story" onclick="viewStory(this)">
+                <img src="../images/head4.jpg" alt="Mia">
+                <p>mia</p>
+            </div>
+
+            <div class="story" onclick="viewStory(this)">
+                <img src="../images/ead5.jpg" alt="Chris">
+                <p>chris</p>
+            </div>
+
+            <div class="story" onclick="viewStory(this)">
+                <img src="../images/hea5.jpg" alt="Emma">
+                <p>emma</p>
+            </div>
+
+        </section>
+
+
+        <!-- POSTS SECTION -->
+        <section class="feed">
+
+            <!-- FIRST POST -->
+            <article class="post" data-post-id="post1
+            ">
+
+                <div class="post-header">
+
+                    <img
+                        src="../images/pro2.jpg"
+                        alt="Alex profile"
+                        class="post-avatar"
+                    >
+
+                    <div class="post-user">
+                        <strong>alex</strong>
+                        <span>Original audio</span>
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis"></i>
+
+                </div>
+
+                <img
+                    src="../images/poet2.jpg"
+                    alt="Beautiful scenery"
+                    class="post-image"
+                >
+
+                <div class="post-actions">
+
+                    <div class="action-left">
+                        <i class="fa-regular fa-heart  like-button" onclick="toggleLike(this)"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                 <i class="fa-regular fa-bookmark save-button" onclick="toggleSave(this)" title="Save post"></i>
+
+                </div>
+
+                <div class="post-details">
+                     <span class="like-count">1,245</span>
+                    <strong >likes</strong>
+                    <p>
+                        <strong>alex</strong>
+                        Enjoying the beautiful moments of life! 🌍
+                    </p>
+
+                    <p class="comments">View all 35 comments</p>
+
+                    <p class="time">2 HOURS AGO</p>
+                </div>
+
+            </article>
+
+
+            <!-- SECOND POST -->
+            <article class="post">
+
+                <div class="post-header">
+
+                    <img
+                        src="../images/profil1.jpg"
+                        alt="Sarah profile"
+                        class="post-avatar"
+                    >
+
+                    <div class="post-user">
+                        <strong>sarah</strong>
+                        <span>Suggested for you</span>
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis"></i>
+
+                </div>
+
+                <img
+                    src="../images/porf1.jpg"
+                    alt="Travel photograph"
+                    class="post-image"
+                >
+
+                <div class="post-actions">
+
+                    <div class="action-left">
+                       <i class="fa-regular fa-heart  like-button" onclick="toggleLike(this)"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                   <i class="fa-regular fa-bookmark save-button" onclick="toggleSave(this)" title="Save post"></i>
+
+                </div>
+
+                <div class="post-details">
+                    <span class="like-count">876 </span>
+                    <strong >likes</strong>
+
+                    <p>
+                        <strong>sarah</strong>
+                        Collecting memories, not things. ✨
+                    </p>
+
+                    <p class="comments">View all 18 comments</p>
+
+                    <p class="time">5 HOURS AGO</p>
+                </div>
+
+            </article>
+            <!-- THIRD POST -->
+            <article class="post">
+
+                <div class="post-header">
+
+                    <img
+                        src="../images/profil1.jpg"
+                        alt="Sarah profile"
+                        class="post-avatar"
+                    >
+
+                    <div class="post-user">
+                        <strong>sarah</strong>
+                        <span>Suggested for you</span>
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis"></i>
+
+                </div>
+
+            <video class="post-image" controls>
+                 <source src="../vidoes/0821 (1).mp4" type="video/mp4">
+                  Your browser does not support video playback.
+             </video>
+                <div class="post-actions">
+
+                    <div class="action-left">
+                       <i class="fa-regular fa-heart  like-button" onclick="toggleLike(this)"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+
+                  <i class="fa-regular fa-bookmark save-button" onclick="toggleSave(this)" title="Save post"></i>
+
+                </div>
+
+                <div class="post-details">
+                    <span class="like-count">876 </span>
+                    <strong >likes</strong>
+
+                    <p>
+                        <strong>sarah</strong>
+                        Collecting memories, not things. ✨
+                    </p>
+
+                    <p class="comments">View all 18 comments</p>
+
+                    <p class="time">5 HOURS AGO</p>
+                </div>
+
+            </article>
+            <!-- FOURTH POST -->
+            <article class="post">
+
+                <div class="post-header">
+
+                    <img
+                        src="../images/profil1.jpg"
+                        alt="Sarah profile"
+                        class="post-avatar"
+                    >
+
+                    <div class="post-user">
+                        <strong>sarah</strong>
+                        <span>Suggested for you</span>
+                    </div>
+
+                    <i class="fa-solid fa-ellipsis"></i>
+
+                </div>
+
+        <video class="post-image" controls>
+            <source src="../vidoes/0821 (2).mp4" type="video/mp4">
+          Your browser does not support video playback.
+        </video>
+                    
+
+                <div class="post-actions">
+
+                    <div class="action-left">
+                       <i class="fa-regular fa-heart  like-button" onclick="toggleLike(this)"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+
+                    <i class="fa-regular fa-bookmark save-button" onclick="toggleSave(this)" title="Save post"></i>
+
+                </div>
+
+                <div class="post-details">
+                    <span class="like-count">876 </span>
+                    <strong >likes</strong>
+
+                    <p>
+                        <strong>sarah</strong>
+                        Collecting memories, not things. ✨
+                    </p>
+
+                    <p class="comments">View all 18 comments</p>
+
+                    <p class="time">5 HOURS AGO</p>
+                </div>
+
+            </article>
+            
+
+        </section>
+    </main>
+   
+
+
+    <!-- RIGHT SIDEBAR -->
+    <aside class="right-sidebar">
+
+        <div class="profile-switch">
+
+            <img src="../images/mypro.jpg" alt="Your profile">
+
+            <div class="profile-info">
+                <strong>your_username</strong>
+                <span>Your Name</span>
+            </div>
+
+            <a href="#">Switch</a>
+
+        </div>
+
+
+        <div class="suggestions-heading">
+            <strong>Suggested for you</strong>
+            <a href="#">See All</a>
+        </div>
+
+
+        <div class="suggestion">
+
+            <img src="../images/prro1.jpg" alt="User">
+
+            <div class="suggestion-info">
+                <strong>john_doe</strong>
+                <span>Suggested for you</span>
+            </div>
+
+            <a href="#">Follow</a>
+
+        </div>
+
+
+        <div class="suggestion">
+
+            <img src="../images/prro2.jpg" alt="User">
+
+            <div class="suggestion-info">
+                <strong>creative_mia</strong>
+                <span>Followed by alex</span>
+            </div>
+
+            <a href="#">Follow</a>
+
+        </div>
+
+
+        <div class="suggestion">
+
+            <img src="../images/prro3.jpg" alt="User">
+
+            <div class="suggestion-info">
+                <strong>travel_world</strong>
+                <span>Suggested for you</span>
+            </div>
+
+            <a href="#">Follow</a>
+
+        </div>
+
+
+        <footer>
+            About · Help · Press · API · Jobs · Privacy<br><br>
+            © 2026 INSTAGRAM CLONE
+        </footer>
+
+    </aside>
+ <script src="../instagram.js"></script>
+</body>
+</html>
